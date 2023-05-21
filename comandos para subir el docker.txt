@@ -1,0 +1,5 @@
+docker compose -d db
+
+docker compose build
+
+docker compose up Digapp_Establishments_ms
