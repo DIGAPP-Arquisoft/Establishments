@@ -2,7 +2,7 @@
 
 Microservicio para la gestion de establecimientos.
 
-          Despliegue en Docker
+          Para Dockerizar
 ------------------------------------------------------
 
 docker compose up -d db
@@ -20,14 +20,19 @@ si se presenta error de gradle es necesario ejecutar este comando y volver a hac
 ------------------------------------------------------
 Respecto al MS Establishments se añadió la opción de filtrar por userID, Filtrar por tipo de establecimiento y se implementó el apartado de bookings. Comparto a continuación las URL
 
+--para mostrar todos los establecimientos (get)
+http://establishments.ddns.net:8080/api/establishments
 
---para filtrar por userID:
+
+--para filtrar por userID: (get)
 http://establishments.ddns.net:8080/api/establishments/user/646ac7e1e42feb67db1fc8f5 (en donde "646ac7e1e42feb67db1fc8f5" es el userID a filtrar)
---para filtrar por tipo de establecimiento:
+
+
+--para filtrar por tipo de establecimiento: (get)
 http://establishments.ddns.net:8080/api/establishments/type/Cafe (donde "café" es el tipo de establecimiento a filtrar)
 
 
---para añadir bookings:
+--para añadir bookings: (put)
 http://establishments.ddns.net:8080/api/establishments/3627b0c6-74b7-40df-869b-5d7979b261eb/bookings (en donde "3627b0c6-74b7-40df-869b-5d7979b261eb" es el ID del establecimiento donde se añadira el booking.
 
 
